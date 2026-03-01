@@ -13,30 +13,51 @@ body{
   color:#f2f2f2;
 }
 
-/* HEADER */
-header{
-  background:#000;
-  padding:30px 20px;
-  text-align:center;
+/* HERO IMAGE */
+.hero{
+  width:100%;
+  height:280px;
+  background:url('https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260227-WA0023.jpg') center/cover no-repeat;
   border-bottom:4px solid #c9a227;
 }
-header h1{
+
+/* HEADER TEXT */
+.header-text{
+  text-align:center;
+  margin:25px 10px 40px;
+}
+.header-text h1{
   margin:0;
   color:#c9a227;
   font-size:36px;
   font-weight:900;
 }
-header p{
-  margin-top:10px;
-  font-size:18px;
+.header-text p{
   color:#ccc;
+  font-size:18px;
+}
+
+/* IMAGE STRIP */
+.top-images{
+  max-width:1200px;
+  margin:0 auto 50px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+.top-images img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border:2px solid rgba(201,162,39,.4);
 }
 
 /* CONTAINER */
 .container{
   max-width:1200px;
   margin:auto;
-  padding:40px 20px;
+  padding:20px;
 }
 
 /* PRODUCT GRID */
@@ -59,7 +80,7 @@ header p{
   border-bottom:2px solid #c9a227;
 }
 .product-card h4{
-  margin:12px 0 5px;
+  margin:10px 0 0;
   color:#c9a227;
 }
 
@@ -72,7 +93,7 @@ header p{
 
 label{
   display:block;
-  margin-top:16px;
+  margin-top:15px;
   font-weight:600;
 }
 input, textarea, select{
@@ -125,38 +146,46 @@ footer{
 
 <body>
 
-<header>
+<div class="hero"></div>
+
+<div class="header-text">
   <h1>Scon Industrial Chemical & Floor</h1>
   <p>Dealers in High Quality Increte Chemicals & Materials</p>
-</header>
+</div>
+
+<!-- TOP IMAGES (NO NAMES) -->
+<div class="top-images">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0008(1).jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0011(1).jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0014.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0015.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0020.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0013.jpg">
+</div>
 
 <div class="container">
 
-<!-- PRODUCT GALLERY -->
-<h2 style="color:#c9a227;text-align:center;">Our Products</h2>
-
+<!-- PRODUCTS -->
 <div class="products">
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Colour+Pigments"><h4>Colour Pigments</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Colour+Hardener"><h4>Colour Hardener</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Release+Agents"><h4>Release Agents</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Raw+Sealant"><h4>Raw Sealant</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Xylene"><h4>Xylene</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Mixed+Polish"><h4>Mixed Polish</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Edger"><h4>Edger</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Shining+Trowel"><h4>Shining Trowel</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Manganese"><h4>Manganese</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Design+Rollers"><h4>Design Rollers</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Stamping+Mat"><h4>Stamping Mat</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Groover"><h4>Groover</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Marble+Dust"><h4>Marble Dust</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=Calcium"><h4>Calcium</h4></div>
-  <div class="product-card"><img src="https://via.placeholder.com/300x200?text=PVA"><h4>P. V. A.</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Colour Pigments</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Colour Hardener</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Release Agents</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Raw Sealant</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Xylene</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Mixed Polish</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Edger</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Shining Trowel</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Manganese</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Design Rollers</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Stamping Mat</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Groover</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Marble Dust</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>Calcium</h4></div>
+  <div class="product-card"><img src="https://via.placeholder.com/300x200"><h4>P. V. A.</h4></div>
 </div>
 
 <!-- ORDER FORM -->
 <div class="form-box">
-<h2 style="color:#c9a227;">Customer Order Form</h2>
-
 <form onsubmit="sendToWhatsApp();return false;">
 <label>Select Product</label>
 <select id="product">
@@ -202,10 +231,10 @@ footer{
 <script>
 function sendToWhatsApp(){
   const msg =
-  "Product: "+product.value+
-  "%0AQuantity: "+specs.value+
-  "%0AName: "+name.value+
-  "%0APhone: "+phone.value;
+    "Product: "+product.value+
+    "%0AQuantity: "+specs.value+
+    "%0AName: "+name.value+
+    "%0APhone: "+phone.value;
   window.open("https://wa.me/2349044333107?text="+msg,"_blank");
 }
 </script>
