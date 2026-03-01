@@ -8,128 +8,134 @@
 <style>
 body{
   margin:0;
-  font-family:Arial, sans-serif;
-  background:#111;
-  color:#fff;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#0c0c0c;
+  color:#f2f2f2;
 }
 
 /* HEADER */
-.header{
+.header-text{
   text-align:center;
-  padding:25px 10px;
+  padding:25px 10px 10px;
 }
-.header h1{
+.header-text h1{
   margin:0;
-  color:#d4af37;
+  color:#c9a227;
+  font-size:36px;
+  font-weight:900;
 }
-.header p{
-  margin-top:8px;
+.header-text p{
+  margin:8px 0 0;
   color:#ccc;
+  font-size:18px;
 }
 
-/* REMOVE EMPTY IMAGE SPACE */
-.image-section{
-  display:none;
+/* TOP HERO IMAGE */
+.hero{
+  width:100%;
+  height:280px;
+  background:url('https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260227-WA0023.jpg') center/cover no-repeat;
+  border-bottom:4px solid #c9a227;
 }
 
-/* PRODUCTS */
-.products{
+/* ADDITIONAL TOP IMAGES */
+.top-images{
   max-width:1200px;
-  margin:auto;
-  padding:20px;
+  margin:10px auto 40px;
+  padding:0 20px;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  gap:15px;
 }
-.product{
-  border:1px solid #d4af37;
-  padding:15px;
-  text-align:center;
-}
-.product h4{
-  margin:0;
-  color:#d4af37;
+.top-images img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border:2px solid rgba(201,162,39,.4);
 }
 
 /* FORM */
 .form-box{
   max-width:700px;
-  margin:40px auto;
+  margin:20px auto 50px;
   padding:25px;
-  border:1px solid #d4af37;
+  border:1px solid rgba(201,162,39,.4);
+  background:#050505;
 }
 label{
   display:block;
   margin-top:15px;
+  font-weight:600;
 }
-input, select, textarea{
+input, textarea, select{
   width:100%;
-  padding:10px;
+  padding:12px;
   margin-top:6px;
-  background:#000;
-  color:#fff;
+  background:#0c0c0c;
   border:1px solid #333;
+  color:#fff;
 }
+textarea{ min-height:90px; }
+
 button{
-  margin-top:25px;
   width:100%;
-  padding:14px;
-  background:#d4af37;
+  margin-top:25px;
+  padding:16px;
+  background:linear-gradient(90deg,#c9a227,#f2d675);
   border:none;
-  font-weight:bold;
+  font-size:18px;
+  font-weight:800;
+  cursor:pointer;
 }
 
 /* FLOATING BUTTONS */
 .whatsapp-btn,.call-btn,.facebook-btn,.instagram-btn{
   position:fixed;
-  right:15px;
-  padding:12px 16px;
-  border-radius:30px;
+  right:18px;
+  padding:14px 18px;
+  border-radius:40px;
+  font-weight:700;
   color:#fff;
-  font-weight:bold;
   text-decoration:none;
+  z-index:999;
 }
-.instagram-btn{ bottom:210px; background:#c13584; }
-.facebook-btn{ bottom:150px; background:#1877f2; }
-.whatsapp-btn{ bottom:90px; background:#25d366; }
-.call-btn{ bottom:30px; background:#2563eb; }
+.instagram-btn{ bottom:210px; background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);}
+.facebook-btn{ bottom:150px; background:#1877f2;}
+.whatsapp-btn{ bottom:90px; background:#25d366;}
+.call-btn{ bottom:30px; background:#2563eb;}
 
+/* FOOTER */
 footer{
   text-align:center;
   padding:20px;
   background:#000;
   color:#aaa;
+  margin-top:50px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
+<div class="header-text">
   <h1>Scon Industrial Chemical & Floor</h1>
   <p>Dealers in High Quality Increte Chemicals & Materials</p>
 </div>
 
-<!-- EMPTY IMAGE SPACE REMOVED -->
+<!-- HERO IMAGE -->
+<div class="hero"></div>
 
-<div class="products">
-  <div class="product"><h4>Colour Pigments</h4></div>
-  <div class="product"><h4>Colour Hardener</h4></div>
-  <div class="product"><h4>Release Agents</h4></div>
-  <div class="product"><h4>Raw Sealant</h4></div>
-  <div class="product"><h4>Xylene</h4></div>
-  <div class="product"><h4>Mixed Polish</h4></div>
-  <div class="product"><h4>Edger</h4></div>
-  <div class="product"><h4>Shining Trowel</h4></div>
-  <div class="product"><h4>Manganese</h4></div>
-  <div class="product"><h4>Design Rollers</h4></div>
-  <div class="product"><h4>Stamping Mat</h4></div>
-  <div class="product"><h4>Groover</h4></div>
-  <div class="product"><h4>Marble Dust</h4></div>
-  <div class="product"><h4>Calcium</h4></div>
-  <div class="product"><h4>P. V. A.</h4></div>
+<!-- TOP IMAGES -->
+<div class="top-images">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0008(1).jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0011(1).jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0014.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0015.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0020.jpg">
+  <img src="https://raw.githubusercontent.com/allroundadvert/-SCON-INDUSTRIAL-CHEMICAL-AND-FLOOR-/b848a9a1f8b35c018f6c73bbd952e0d9efe4c185/IMG-20260301-WA0013.jpg">
 </div>
 
+<!-- ORDER FORM -->
 <div class="form-box">
 <form onsubmit="sendToWhatsApp();return false;">
 <label>Select Product</label>
@@ -160,12 +166,13 @@ footer{
 <label>Phone</label>
 <input id="phone">
 
-<button>Submit & WhatsApp</button>
+<button>SUBMIT & CHAT ON WHATSAPP</button>
 </form>
 </div>
 
 <footer>© 2026 Scon Industrial Chemical & Floor</footer>
 
+<!-- FLOATING BUTTONS -->
 <a class="instagram-btn" href="https://www.instagram.com/mazi_c.h.i.d.i.e.b.e.r.e" target="_blank">Instagram</a>
 <a class="facebook-btn" href="https://www.facebook.com/share/1KNMSZTrjL/" target="_blank">Facebook</a>
 <a class="whatsapp-btn" href="https://wa.me/2349044333107" target="_blank">WhatsApp</a>
@@ -175,7 +182,7 @@ footer{
 function sendToWhatsApp(){
   const msg =
     "Product: "+product.value+
-    "%0ASpecification: "+specs.value+
+    "%0AQuantity: "+specs.value+
     "%0AName: "+name.value+
     "%0APhone: "+phone.value;
   window.open("https://wa.me/2349044333107?text="+msg,"_blank");
